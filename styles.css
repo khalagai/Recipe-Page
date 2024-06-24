@@ -1,0 +1,223 @@
+.attribution { font-size: 11px; text-align: center; display: none;}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.mains1, .mains2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 54%, 90%);
+    position: absolute;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+   
+}
+.mains1 {
+    top: 80px;
+    z-index: 2;
+    left: 90px;
+    width: 50%;
+}
+.mains2 {
+  right: 80px;
+  width: 50%;
+  margin-top: -160px;
+  
+}
+.recipe-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    padding: 10px;
+    font-family: outfit;
+    font-size: 12px;
+    font-weight: 400;
+    color: hsl(30, 10%, 34%);
+    width: 50%;
+}
+.preparation {
+    background-color: hsl(330, 100%, 98%);
+    width: 95%;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.ingredients {
+    width: 95%;
+}
+.instructions {
+    width: 95%;
+}
+.instructions h3 {
+    padding-bottom: 20px;
+}
+.instructions li {
+    padding-left: 20px;
+}
+.nutrition h3 {
+    padding-bottom: 10px;
+}
+.ingredients li {
+    margin-left: -20px;
+}
+li {
+    padding: 3px;
+}
+ol {
+    margin:0 0 1.5em;
+    padding:0;
+    counter-reset:item;
+  }
+   
+  ol>li {
+    margin: 0;
+    padding:0 0 1 2em;
+    text-indent:-2em;
+    list-style-type:none;
+    counter-increment:item;
+  }
+   
+  ol>li:before {
+    display:inline-block;
+    width:1.5em;
+    padding-right:0.5em;
+    font-weight:bold;
+    color: hsl(332, 51%, 32%);
+    text-align:right;
+    content:counter(item) ".";
+  }
+span {
+    font-weight: 700;
+}
+
+hr {
+    color: hsl(30, 18%, 87%);
+}
+.units {
+    color: hsl(332, 51%, 32%);
+}
+
+.weights {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-left: 30px;    
+    gap: 30px;
+   
+}
+.units, .item {
+    width: 100%;
+}
+
+img {
+    border-radius: 16px;
+    width: 100%;
+}
+
+h2 {
+    color: hsl(24, 5%, 18%);
+    font-family: young serif;
+}
+h3 {
+    color: hsl(332, 51%, 32%);
+    font-family: young serif;
+    margin-bottom: -10px;
+}
+h4 {
+    color: hsl(332, 51%, 32%);
+    margin-bottom: -10px;
+}
+@media (max-width: 375px) {
+    body {background-color: hsl(24, 5%, 18%);}
+    .screen {
+        margin-top: -8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mains2 {display: none;}
+    .mains1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        width: 150px;
+    }
+    .recipe-container {
+       width: 95%;
+       margin-top: -50px;
+       border-radius: 0;
+       font-size: 6px;
+       margin-bottom: -50px;
+    }
+    img {
+        width: 163px;
+        border-radius: 0;
+        margin-top: -10px;
+    }
+    .preparation {
+        width: 140px;
+        border-radius: 0;
+        margin-left: -0px;
+    }
+    .preparation li {
+        margin-left: -25px;
+    }
+    .ingredients {
+        margin-left: -10px;
+    }
+    .ingredients li {
+        margin-left: -25px;
+    }
+    .instructions {
+        margin-left: -10px;
+    }
+    .instructions h3 {
+        margin-bottom: -20px;
+    }
+    ol {
+        margin-left: -8px;
+    } 
+    li {
+        padding: 1px;
+    }
+    h3 {
+        font-size: 9px;
+        padding-bottom: 2px;
+    }
+    h2 {font-size: 12px;
+
+    }
+    h4 {padding-bottom: 5px;}
+    .item {margin-left: -10px;}
+}
+
+@media (min-width: 375px) and (max-width: 600px) {
+    .mains2 {display: none;}
+    .screen {
+        margin-top: -8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mains2 {display: none;}
+    .mains1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: static;
+        width: 100%;
+        }
+        .recipe-container {
+            width: 260px;
+            margin-top: -10px;
+
+         }
+         img {width: 100%;}
+    }
